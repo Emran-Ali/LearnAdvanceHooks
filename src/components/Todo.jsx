@@ -11,7 +11,7 @@ function Todo() {
             .then((res) => res.json())
             .then((data) => {
                 setTimeout(() => {
-                    console.log(isMount)
+                    // console.log(isMount)
                     if (isMount.current) {
                         // setTodo(data);
                         setLoading(false);
@@ -21,7 +21,7 @@ function Todo() {
                 }, 1000)
 
             })
-        console.log(isMount + " above")
+        // console.log(isMount + " above")
         //runs when component unmount 
         // return () => {
         //     isMount.current = false;
