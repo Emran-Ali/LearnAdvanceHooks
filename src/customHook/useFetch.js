@@ -12,11 +12,11 @@ function useFetch() {
             try {
                 const response = await fetch(url, options);
                 const data = await response.json();
-                setLoadin(false);
                 setData(data);
-            }
-            catch (error) {
-                console.log('hear are you');
+                setLoadin(false);
+
+            } catch (error) {
+
                 setError(error);
                 setLoadin(false);
             }
